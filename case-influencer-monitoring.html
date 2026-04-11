@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Monitoring Case Study — AI-Powered SaaS Dashboard Design | Otmane Allaoui</title>
+    <meta name="description" content="Product design case study: How I designed an AI-powered influencer monitoring platform with data-driven dashboards, persona workflows, and campaign tracking — improving efficiency by 30%.">
+    <meta name="keywords" content="SaaS design case study, influencer monitoring, AI dashboard, product design, UX research, campaign tracking, data visualization, Figma">
+    <meta name="author" content="Otmane Allaoui">
+    <link rel="canonical" href="https://otmaneallaoui.com/case-influencer-monitoring.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="theme-color" content="#0a0a0b">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://otmaneallaoui.com/case-influencer-monitoring.html">
+    <meta property="og:title" content="Influencer Monitoring — AI-Powered SaaS Dashboard Design Case Study">
+    <meta property="og:description" content="How I designed an AI-powered influencer monitoring platform that improved monitoring efficiency by 30%.">
+    <meta property="og:image" content="https://otmaneallaoui.com/og-image.png">
+    <meta property="og:site_name" content="Otmane Allaoui Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@Otmaneallaoui_9">
+    <meta name="twitter:title" content="Influencer Monitoring — AI-Powered SaaS Dashboard Design Case Study">
+    <meta name="twitter:description" content="How I designed an AI-powered influencer monitoring platform that improved monitoring efficiency by 30%.">
+    <meta name="twitter:image" content="https://otmaneallaoui.com/og-image.png">
+
+    <!-- Structured Data: Case Study -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Influencer Monitoring — AI-Powered SaaS Platform Design",
+        "description": "Product design case study: Designing a data-driven platform for tracking influencer performance and campaign effectiveness with AI analysis modules.",
+        "author": {
+            "@type": "Person",
+            "name": "Otmane Allaoui",
+            "url": "https://otmaneallaoui.com"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "Otmane Allaoui"
+        }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">OA<span class="accent">.</span></a>
+            <div class="nav-links">
+                <a href="index.html#work">Work</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#tools">Tools</a>
+                <a href="index.html#contact" class="nav-cta">Let's Talk</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#tools">Tools</a>
+        <a href="index.html#contact">Let's Talk</a>
+    </div>
+
+    <main>
+    <article>
+
+    <!-- Case Study Hero -->
+    <section class="case-hero">
+        <div class="container">
+            <a href="index.html#work" class="back-link" data-animate="fade-up">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Back to Work
+            </a>
+            <div class="case-hero-content" data-animate="fade-up" data-delay="100">
+                <div class="project-tags">
+                    <span class="tag">SaaS</span>
+                    <span class="tag">Product Design</span>
+                    <span class="tag">Figma</span>
+                    <span class="tag">AI-Powered</span>
+                </div>
+                <h1>Influencer<br>Monitoring</h1>
+                <p class="case-hero-desc">A data-driven platform for tracking influencer performance and campaign effectiveness, featuring AI analysis modules and streamlined monitoring workflows.</p>
+            </div>
+            <div class="case-meta" data-animate="fade-up" data-delay="200">
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">Product Designer</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Company</span>
+                    <span class="meta-value">Evead Group</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Tools</span>
+                    <span class="meta-value">Figma</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Live</span>
+                    <span class="meta-value"><a href="https://infuencer-monitoring.figma.site" target="_blank" rel="noopener">View Prototype &nearr;</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Mockup -->
+    <section class="case-visual">
+        <div class="container-wide">
+            <div class="case-mockup-large" data-animate="fade-up">
+                <div class="mockup-browser large">
+                    <div class="browser-dots"><span></span><span></span><span></span></div>
+                    <div class="browser-url">infuencer-monitoring.figma.site</div>
+                </div>
+                <div class="mockup-screen large-screen">
+                    <div class="mock-dashboard large-dash">
+                        <div class="mock-sidebar">
+                            <div class="mock-logo-area"></div>
+                            <div class="mock-nav-item active"></div>
+                            <div class="mock-nav-item"></div>
+                            <div class="mock-nav-item"></div>
+                            <div class="mock-nav-item"></div>
+                            <div class="mock-nav-item"></div>
+                        </div>
+                        <div class="mock-main">
+                            <div class="mock-header-bar"></div>
+                            <div class="mock-cards">
+                                <div class="mock-stat-card highlight"><div class="mock-stat-value"></div><div class="mock-stat-label"></div></div>
+                                <div class="mock-stat-card"><div class="mock-stat-value"></div><div class="mock-stat-label"></div></div>
+                                <div class="mock-stat-card"><div class="mock-stat-value"></div><div class="mock-stat-label"></div></div>
+                                <div class="mock-stat-card"><div class="mock-stat-value"></div><div class="mock-stat-label"></div></div>
+                            </div>
+                            <div class="mock-chart large-chart"></div>
+                            <div class="mock-table">
+                                <div class="mock-table-row header"></div>
+                                <div class="mock-table-row"></div>
+                                <div class="mock-table-row"></div>
+                                <div class="mock-table-row"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem -->
+    <section class="case-section">
+        <div class="container-narrow">
+            <div class="case-block" data-animate="fade-up">
+                <span class="section-label">The Challenge</span>
+                <h2>Tracking influencers is manual and fragmented</h2>
+                <p>
+                    Marketing teams managing influencer campaigns often rely on spreadsheets, scattered tools, and manual processes to track performance. There was no unified platform to monitor influencer effectiveness, measure campaign results, and make data-driven decisions — all in one place.
+                </p>
+                <div class="case-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-number">Manual</span>
+                        <span class="highlight-label">Fragmented tracking across tools</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">No AI</span>
+                        <span class="highlight-label">Lacking smart analysis capabilities</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">Slow</span>
+                        <span class="highlight-label">Inefficient monitoring workflows</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution -->
+    <section class="case-section">
+        <div class="container-narrow">
+            <div class="case-block" data-animate="fade-up">
+                <span class="section-label">The Solution</span>
+                <h2>A data-driven monitoring platform</h2>
+                <p>
+                    I designed a unified platform that centralizes influencer tracking, campaign performance monitoring, and AI-powered analysis into one intuitive interface — improving monitoring efficiency by 30%.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Deep Dive -->
+    <section class="case-section">
+        <div class="container">
+            <div class="case-features" data-animate="fade-up">
+                <div class="case-feature">
+                    <div class="feature-visual">
+                        <div class="feature-mock">
+                            <div class="mock-search-bar"></div>
+                            <div class="mock-filter-row">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mock-influencer-grid">
+                                <div class="mock-influencer-card"></div>
+                                <div class="mock-influencer-card"></div>
+                                <div class="mock-influencer-card"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <span class="feature-number">01</span>
+                        <h3>Persona-Driven Workflows</h3>
+                        <p>Created detailed personas and mapped user workflows to ensure the platform addressed real pain points for marketing teams managing influencer campaigns.</p>
+                    </div>
+                </div>
+                <div class="case-feature reverse">
+                    <div class="feature-visual">
+                        <div class="feature-mock">
+                            <div class="mock-chart-area">
+                                <div class="mock-line-chart"></div>
+                            </div>
+                            <div class="mock-metrics-row">
+                                <div class="mock-metric"></div>
+                                <div class="mock-metric"></div>
+                                <div class="mock-metric"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <span class="feature-number">02</span>
+                        <h3>Data-Driven Interface</h3>
+                        <p>Designed a performance dashboard with clear data visualizations to track influencer metrics, campaign results, and engagement data at a glance.</p>
+                    </div>
+                </div>
+                <div class="case-feature">
+                    <div class="feature-visual">
+                        <div class="feature-mock">
+                            <div class="mock-kanban">
+                                <div class="mock-kanban-col">
+                                    <div class="mock-kanban-header"></div>
+                                    <div class="mock-kanban-card"></div>
+                                    <div class="mock-kanban-card"></div>
+                                </div>
+                                <div class="mock-kanban-col">
+                                    <div class="mock-kanban-header"></div>
+                                    <div class="mock-kanban-card"></div>
+                                </div>
+                                <div class="mock-kanban-col">
+                                    <div class="mock-kanban-header"></div>
+                                    <div class="mock-kanban-card"></div>
+                                    <div class="mock-kanban-card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <span class="feature-number">03</span>
+                        <h3>AI Analysis Modules</h3>
+                        <p>Integrated AI-powered analysis modules into the prototype to surface insights on influencer performance and campaign effectiveness automatically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process -->
+    <section class="case-section section-dark">
+        <div class="container-narrow">
+            <div class="case-block" data-animate="fade-up">
+                <span class="section-label">Process</span>
+                <h2>How I designed it</h2>
+                <p>
+                    This project was part of my work at Evead Group, where I led design initiatives for AI and data-driven products.
+                </p>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Personas & Research</h4>
+                            <p>Created detailed personas to understand different user types — from campaign managers to brand strategists — and their specific monitoring needs.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Workflow Mapping</h4>
+                            <p>Mapped end-to-end user workflows for campaign tracking, influencer evaluation, and performance reporting to ensure a streamlined experience.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Data-Driven UI Design</h4>
+                            <p>Designed the interface with a focus on data visualization and clarity — making complex influencer metrics easy to scan and act on.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>High-Fidelity Prototyping</h4>
+                            <p>Delivered high-fidelity interactive prototypes in Figma with integrated AI analysis module concepts, ready for development handoff.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="case-section">
+        <div class="container-narrow">
+            <div class="case-block" data-animate="fade-up">
+                <span class="section-label">Outcome</span>
+                <h2>Key takeaways</h2>
+                <div class="case-results">
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <h4>30% improvement in monitoring efficiency</h4>
+                            <p>The data-driven interface and streamlined workflows significantly reduced the time teams spent on manual influencer tracking.</p>
+                        </div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <h4>AI-integrated prototypes</h4>
+                            <p>Delivered high-fidelity prototypes with AI analysis modules that demonstrated how smart insights could drive better campaign decisions.</p>
+                        </div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <h4>Persona-driven design decisions</h4>
+                            <p>Every design choice was grounded in real user personas and validated workflows, ensuring the platform addressed actual pain points.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="case-section section-dark">
+        <div class="container">
+            <div class="next-project" data-animate="fade-up">
+                <span class="section-label">Next Project</span>
+                <a href="case-infacto.html" class="next-project-link">
+                    <h2>InFactore</h2>
+                    <span class="project-link">View Case Study <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-logo">OA<span class="accent">.</span></span>
+                <span class="footer-copy">&copy; 2026 Otmane Allaoui. Built with Claude & Cursor.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
