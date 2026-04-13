@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing product design work across SaaS, fintech, and AI.
 
-**Live site:** [otmaneallaoui.com](https://otmaneallaoui.com) (update after deployment)
+**Live site:** [otmane-portfolio.vercel.app](https://otmane-portfolio.vercel.app) (update after deployment)
 
 ## Project Structure
 
@@ -81,10 +81,10 @@ vercel --prod
 
 ## After Deployment
 
-1. **Replace `otmaneallaoui.com`** in all HTML files and `sitemap.xml` with your actual domain
+1. **Replace `otmane-portfolio.vercel.app`** in all HTML files and `sitemap.xml` with your actual domain
    ```bash
    # Find and replace across all files
-   grep -rl "otmaneallaoui.com" . --include="*.html" --include="*.xml" | xargs sed -i '' 's/otmaneallaoui.com/YOUR-DOMAIN.com/g'
+   grep -rl "otmane-portfolio.vercel.app" . --include="*.html" --include="*.xml" | xargs sed -i '' 's/otmane-portfolio.vercel.app/YOUR-DOMAIN.com/g'
    ```
 
 2. **Create an OG image** (`og-image.png`, 1200x630px) — this is the preview image shown when your site is shared on LinkedIn/Twitter. Place it in the root directory.
@@ -101,7 +101,7 @@ vercel --prod
 ## Custom Domain Setup (Vercel)
 
 1. In Vercel dashboard: **Settings > Domains > Add**
-2. Enter your domain (e.g., `otmaneallaoui.com`)
+2. Enter your domain (e.g., `otmane-portfolio.vercel.app`)
 3. Update DNS records at your registrar:
    - **A record:** `76.76.21.21`
    - **CNAME:** `cname.vercel-dns.com` (for `www` subdomain)
