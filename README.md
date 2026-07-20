@@ -11,6 +11,8 @@ Personal portfolio website showcasing product design work across SaaS, fintech, 
 ├── index.html                      # Homepage — hero, projects, about, tools, contact
 ├── case-infacto.html               # Case study — InFactore fintech platform
 ├── case-influencer-monitoring.html # Case study — AI influencer monitoring SaaS
+├── case-realeasty.html             # Case study — AI real estate intelligence website
+├── case-360-base.html              # Case study — AI CRM automation website
 ├── styles.css                      # All styles — dark theme, responsive, animations
 ├── script.js                       # Cursor glow, scroll animations, mobile menu
 ├── 404.html                        # Custom 404 page
