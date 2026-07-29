@@ -384,8 +384,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 /* --- Project Cards --- */
 .project-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: 40px;
     align-items: center;
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -441,15 +441,17 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .graphic-work { margin-top: 96px; padding-top: 32px; border-top: 1px solid var(--border); }
 .graphic-work-header { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 28px; }
 .graphic-work-header p { max-width: 380px; color: var(--text-muted); }
-.graphic-work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
-.graphic-project-card { display: grid; grid-template-columns: 210px 1fr; gap: 24px; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--bg-card); transition: transform var(--transition), border-color var(--transition), background var(--transition); }
+.graphic-work-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.graphic-project-card { display: grid; grid-template-columns: minmax(230px, 44%) minmax(0, 1fr); gap: 24px; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--bg-card); transition: transform var(--transition), border-color var(--transition), background var(--transition); }
 .graphic-project-card:hover { transform: translateY(-4px); border-color: var(--border-hover); background: var(--bg-card-hover); }
-.graphic-project-image { height: 240px; overflow: hidden; border-radius: var(--radius); background: #f5f2ec; }
-.graphic-project-image img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.graphic-project-image { min-height: 340px; overflow: hidden; border-radius: var(--radius); background: #f5f2ec; }
+.graphic-project-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 38%; transition: transform var(--transition); }
+.graphic-project-card:hover .graphic-project-image img { transform: scale(1.025); }
 .graphic-project-card h3 { margin: 10px 0 8px; font-size: 1.45rem; }
 .graphic-project-card p { color: var(--text-muted); font-size: .9rem; line-height: 1.65; margin-bottom: 22px; }
 .graphic-case-visual { padding-bottom: 100px; }
-.graphic-case-visual img { width: 100%; max-height: 1000px; object-fit: cover; object-position: top; border: 1px solid var(--border); border-radius: var(--radius-lg); background: #f5f2ec; }
+.graphic-case-visual .container-wide { display: flex; justify-content: center; }
+.graphic-case-visual img { width: min(100%, 720px); height: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); background: #f5f2ec; box-shadow: var(--shadow-lg); }
 .graphic-detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 34px 0; }
 .graphic-detail-grid > div { padding: 20px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-card); }
 .graphic-detail-grid span { color: var(--accent-light); font: 500 .7rem var(--font-mono); letter-spacing: .08em; text-transform: uppercase; }
@@ -474,7 +476,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 
 .live-preview-frame {
     position: relative;
-    height: 300px;
+    aspect-ratio: 6 / 5;
     overflow: hidden;
     background: #0f0f12;
 }
@@ -491,7 +493,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .preview-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: top center;
 }
 
@@ -1145,7 +1147,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 }
 
 .case-screenshot {
-    height: 520px;
+    height: auto;
+    aspect-ratio: 6 / 5;
     background: #0f0f12;
 }
 
@@ -1681,8 +1684,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 
     .projects-grid { grid-template-columns: 1fr; }
     .graphic-work-header { display: grid; gap: 12px; align-items: start; }
-    .graphic-project-card { grid-template-columns: 150px 1fr; }
-    .graphic-project-image { height: 200px; }
+    .graphic-project-card { grid-template-columns: minmax(190px, 42%) minmax(0, 1fr); }
+    .graphic-project-image { min-height: 300px; }
     .graphic-detail-grid { grid-template-columns: 1fr; }
 
     .tools-grid { grid-template-columns: 1fr; }
@@ -1720,6 +1723,9 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
         font-size: 1.75rem;
     }
     .project-card-info h3 { font-size: 1.5rem; }
+    .project-card { padding: 16px; }
+    .graphic-project-card { grid-template-columns: 1fr; }
+    .graphic-project-image { min-height: 320px; }
     .mock-cards { grid-template-columns: 1fr; }
     .mock-influencer-grid { grid-template-columns: repeat(2, 1fr); }
     .mock-kanban { grid-template-columns: 1fr; }
