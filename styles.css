@@ -1102,6 +1102,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .production-story-copy > p + p { margin-top: 16px; }
 .live-experience { margin: 10px 0; padding: 34px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: radial-gradient(circle at 80% 0%, var(--accent-glow), transparent 34%), var(--bg-elevated); }
 .live-first { padding-top: 0; }
+.live-first .container-wide { width: 100%; max-width: 1600px; }
 .live-experience-wide { width: 100%; padding: 42px; }
 .case-study { display: flex; flex-direction: column; }
 .case-study > section { order: 4; }
@@ -1110,7 +1111,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .case-study > .process-section { order: 3; }
 .live-experience-header { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 28px; }
 .live-experience-header > div { max-width: 680px; }
-.live-product-shell { width: 100%; height: clamp(560px, 62vw, 780px); overflow: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); -webkit-overflow-scrolling: touch; }
+.live-product-shell { width: 100%; max-width: 100%; height: clamp(560px, 62vw, 780px); overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); }
 .live-product-shell iframe { display: block; width: 100%; height: 100%; border: 0; background: var(--bg); }
 .evidence-card { min-height: 260px; display: flex; flex-direction: column; justify-content: end; padding: 30px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: radial-gradient(circle at 50% 0%, var(--accent-glow), transparent 55%), var(--bg-card); }
 .evidence-card h3 { margin: 14px 0 8px; font-size: 2rem; }
@@ -1702,6 +1703,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
     .case-hero-content h1 { font-size: 2.5rem; }
     .production-stage, .live-experience { padding: 18px; }
     .live-experience-wide { padding: 20px; }
+    .live-first .container-wide { padding: 0 12px; }
     .production-stage-copy, .live-experience-header { display: grid; gap: 16px; align-items: start; }
     .live-experience-wide .live-product-shell { height: clamp(560px, 78vh, 680px); }
     .double-diamond-diagram { margin-bottom: 34px; }
