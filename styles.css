@@ -450,7 +450,6 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .graphic-project-card h3 { margin: 10px 0 8px; font-size: 1.45rem; }
 .graphic-project-card p { color: var(--text-muted); font-size: .9rem; line-height: 1.65; margin-bottom: 22px; }
 .graphic-case-visual { padding-bottom: 100px; }
-.graphic-case > .graphic-case-visual { display: none; }
 .graphic-case-visual .container-wide { display: flex; justify-content: center; }
 .graphic-case-visual img { width: min(100%, 720px); height: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); background: #f5f2ec; box-shadow: var(--shadow-lg); }
 .graphic-detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 34px 0; }
