@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-locale-page="influencer-monitoring">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,10 +77,11 @@
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">OA<span class="accent">.</span></a>
             <div class="nav-links">
-                <a href="index.html#work">Work</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#tools">Tools</a>
-                <a href="index.html#contact" class="nav-cta">Let's Talk</a>
+                <a href="index.html#work" data-i18n="navWork">Work</a>
+                <a href="index.html#about" data-i18n="navAbout">About</a>
+                <a href="index.html#tools" data-i18n="navTools">Tools</a>
+                <a href="resume.html" data-i18n="navResume">Resume</a>
+                <a href="index.html#contact" class="nav-cta" data-i18n="navTalk">Let's Talk</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
                 <span></span><span></span>
@@ -89,21 +90,22 @@
     </nav>
 
     <div class="mobile-menu" id="mobileMenu">
-        <a href="index.html#work">Work</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#tools">Tools</a>
-        <a href="index.html#contact">Let's Talk</a>
+        <a href="index.html#work" data-i18n="navWork">Work</a>
+        <a href="index.html#about" data-i18n="navAbout">About</a>
+        <a href="index.html#tools" data-i18n="navTools">Tools</a>
+        <a href="resume.html" data-i18n="navResume">Resume</a>
+        <a href="index.html#contact" data-i18n="navTalk">Let's Talk</a>
     </div>
 
     <main>
-    <article>
+    <article class="case-study">
 
     <!-- Case Study Hero -->
     <section class="case-hero">
         <div class="container">
             <a href="index.html#work" class="back-link" data-animate="fade-up">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Back to Work
+                <span data-i18n="backToWork">Back to Work</span>
             </a>
             <div class="case-hero-content" data-animate="fade-up" data-delay="100">
                 <div class="project-tags">
@@ -113,41 +115,34 @@
                     <span class="tag">AI-Powered</span>
                 </div>
                 <h1>Influencer<br>Monitoring</h1>
-                <p class="case-hero-desc">A data-driven platform for tracking influencer performance and campaign effectiveness, featuring AI analysis modules and streamlined monitoring workflows.</p>
+                <p class="case-hero-desc" data-i18n="heroDescription">A data-driven platform for tracking influencer performance and campaign effectiveness, featuring AI analysis modules and streamlined monitoring workflows.</p>
             </div>
             <div class="case-meta" data-animate="fade-up" data-delay="200">
                 <div class="meta-item">
-                    <span class="meta-label">Role</span>
+                    <span class="meta-label" data-i18n="metaRole">Role</span>
                     <span class="meta-value">Product Designer</span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-label">Sector</span>
-                    <span class="meta-value">Influencer Marketing</span>
+                    <span class="meta-label" data-i18n="metaSector">Sector</span>
+                    <span class="meta-value" data-i18n="metaSectorValue">Influencer Marketing</span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-label">Tools</span>
+                    <span class="meta-label" data-i18n="metaTools">Tools</span>
                     <span class="meta-value">Figma</span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-label">Live</span>
-                    <span class="meta-value"><a href="https://influencer-v26.vercel.app/" target="_blank" rel="noopener">View Prototype &nearr;</a></span>
+                    <span class="meta-label" data-i18n="metaLive">Live</span>
+                    <span class="meta-value"><a href="https://influencer-v26.vercel.app/" target="_blank" rel="noopener" data-i18n="viewProduct">View Prototype &nearr;</a></span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Case Study Mockup -->
-    <section class="case-visual">
+    <section class="case-section live-first">
         <div class="container-wide">
-            <div class="case-mockup-large" data-animate="fade-up">
-                <div class="mockup-browser large">
-                    <div class="browser-dots"><span></span><span></span><span></span></div>
-                    <div class="browser-url">influencer-v26.vercel.app</div>
-                </div>
-                <div class="live-preview-frame case-screenshot">
-                    <img src="assets/screenshots/influencer-monitoring.png" alt="Influencer Monitoring dashboard screenshot" class="preview-image">
-                    <div class="live-preview-overlay"></div>
-                </div>
+            <div class="live-experience live-experience-wide" data-animate="fade-up">
+                <div class="live-experience-header"><div><span class="section-label">Explore the shipped experience</span><h2>Start in the real product.</h2><p>Explore the live interface before reading the case study. Then follow the journey from the initial problem, through the key product choices, to the decisions that shaped the delivered experience.</p></div><a href="https://influencer-v26.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Try the Product ↗</a></div>
+                <div class="live-product-shell"><iframe src="https://influencer-v26.vercel.app/" title="Interactive Influencer Monitoring product preview" loading="lazy"></iframe></div>
             </div>
         </div>
     </section>
@@ -156,23 +151,23 @@
     <section class="case-section">
         <div class="container-narrow">
             <div class="case-block" data-animate="fade-up">
-                <span class="section-label">The Challenge</span>
-                <h2>Tracking influencers is manual and fragmented</h2>
-                <p>
+                <span class="section-label" data-i18n="challengeLabel">The Challenge</span>
+                <h2 data-i18n="challengeTitle">Tracking influencers is manual and fragmented</h2>
+                <p data-i18n="challengeText">
                     Marketing teams managing influencer campaigns often rely on spreadsheets, scattered tools, and manual processes to track performance. There was no unified platform to monitor influencer effectiveness, measure campaign results, and make data-driven decisions — all in one place.
                 </p>
                 <div class="case-highlights">
                     <div class="highlight-item">
                         <span class="highlight-number">Manual</span>
-                        <span class="highlight-label">Fragmented tracking across tools</span>
+                        <span class="highlight-label" data-i18n="challengeManual">Fragmented tracking across tools</span>
                     </div>
                     <div class="highlight-item">
                         <span class="highlight-number">No AI</span>
-                        <span class="highlight-label">Lacking smart analysis capabilities</span>
+                        <span class="highlight-label" data-i18n="challengeAi">Lacking smart analysis capabilities</span>
                     </div>
                     <div class="highlight-item">
                         <span class="highlight-number">Slow</span>
-                        <span class="highlight-label">Inefficient monitoring workflows</span>
+                        <span class="highlight-label" data-i18n="challengeSlow">Inefficient monitoring workflows</span>
                     </div>
                 </div>
             </div>
@@ -183,9 +178,9 @@
     <section class="case-section">
         <div class="container-narrow">
             <div class="case-block" data-animate="fade-up">
-                <span class="section-label">The Solution</span>
-                <h2>A data-driven monitoring platform</h2>
-                <p>
+                <span class="section-label" data-i18n="solutionLabel">The Solution</span>
+                <h2 data-i18n="solutionTitle">A data-driven monitoring platform</h2>
+                <p data-i18n="solutionText">
                     I designed a unified platform that centralizes influencer tracking, campaign performance monitoring, and AI-powered analysis into one intuitive interface — improving monitoring efficiency by 30%.
                 </p>
             </div>
@@ -195,114 +190,41 @@
     <!-- Features Deep Dive -->
     <section class="case-section">
         <div class="container">
-            <div class="case-features" data-animate="fade-up">
-                <div class="case-feature">
-                    <div class="feature-visual">
-                        <div class="feature-mock">
-                            <div class="mock-search-bar"></div>
-                            <div class="mock-filter-row">
-                                <span></span><span></span><span></span>
-                            </div>
-                            <div class="mock-influencer-grid">
-                                <div class="mock-influencer-card"></div>
-                                <div class="mock-influencer-card"></div>
-                                <div class="mock-influencer-card"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feature-content">
-                        <span class="feature-number">01</span>
-                        <h3>Persona-Driven Workflows</h3>
-                        <p>Created detailed personas and mapped user workflows to ensure the platform addressed real pain points for marketing teams managing influencer campaigns.</p>
-                    </div>
-                </div>
-                <div class="case-feature reverse">
-                    <div class="feature-visual">
-                        <div class="feature-mock">
-                            <div class="mock-chart-area">
-                                <div class="mock-line-chart"></div>
-                            </div>
-                            <div class="mock-metrics-row">
-                                <div class="mock-metric"></div>
-                                <div class="mock-metric"></div>
-                                <div class="mock-metric"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feature-content">
-                        <span class="feature-number">02</span>
-                        <h3>Data-Driven Interface</h3>
-                        <p>Designed a performance dashboard with clear data visualizations to track influencer metrics, campaign results, and engagement data at a glance.</p>
-                    </div>
-                </div>
-                <div class="case-feature">
-                    <div class="feature-visual">
-                        <div class="feature-mock">
-                            <div class="mock-kanban">
-                                <div class="mock-kanban-col">
-                                    <div class="mock-kanban-header"></div>
-                                    <div class="mock-kanban-card"></div>
-                                    <div class="mock-kanban-card"></div>
-                                </div>
-                                <div class="mock-kanban-col">
-                                    <div class="mock-kanban-header"></div>
-                                    <div class="mock-kanban-card"></div>
-                                </div>
-                                <div class="mock-kanban-col">
-                                    <div class="mock-kanban-header"></div>
-                                    <div class="mock-kanban-card"></div>
-                                    <div class="mock-kanban-card"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feature-content">
-                        <span class="feature-number">03</span>
-                        <h3>AI Analysis Modules</h3>
-                        <p>Integrated AI-powered analysis modules into the prototype to surface insights on influencer performance and campaign effectiveness automatically.</p>
-                    </div>
-                </div>
+            <div class="production-story" data-animate="fade-up">
+                <div class="production-story-copy"><span class="feature-number">01 / SEARCH EXPERIENCE</span><h2>Start with a signal, not a spreadsheet.</h2><p>Search was designed as the entry point to the product: one place to discover creators by platform, category and talent, then narrow the results without losing the decision context.</p><p>Instead of separating search, filtering and evaluation into different tools, the information architecture keeps them in one connected flow. Teams can discover, scan and decide without rebuilding context.</p></div>
+                <div class="production-story-visual"><img src="assets/screenshots/influencer-monitoring.png" alt="Live search and creator discovery interface" class="production-image"></div>
+            </div>
+            <div class="production-story production-story-reverse" data-animate="fade-up">
+                <div class="production-story-copy"><span class="feature-number">02 / REPORTING</span><h2>Turn monitoring into a shareable decision.</h2><p>Reporting gives teams a clear path from evidence to communication. The workflow makes it easier to package performance signals for stakeholders without rebuilding the story in a separate tool.</p><p>The choice was to connect reporting to the same entities teams already explore, so the evidence stays close to the recommendation.</p></div>
+                <div class="evidence-card"><span class="section-label">Production workflow</span><h3>Reports</h3><p>Explore the live Reports module directly in the embedded product above.</p><a href="https://influencer-v26.vercel.app/" target="_blank" rel="noopener">Open live product ↗</a></div>
+            </div>
+            <div class="production-story" data-animate="fade-up">
+                <div class="production-story-copy"><span class="feature-number">03 / COMPARISON</span><h2>Make trade-offs visible.</h2><p>Comparison became a key workflow because a single profile rarely answers the decision. Teams need to understand differences across creators, campaigns and time periods before committing budget.</p><p>The interface keeps comparable signals and their context together, making strengths, gaps and budget trade-offs easier to discuss.</p></div>
+                <div class="evidence-card"><span class="section-label">Production workflow</span><h3>Comparator</h3><p>Use the live product navigation to open Comparator and test the delivered workflow.</p><a href="https://influencer-v26.vercel.app/" target="_blank" rel="noopener">Explore comparator ↗</a></div>
             </div>
         </div>
     </section>
 
     <!-- Design Process -->
-    <section class="case-section section-dark">
+    <section class="case-section section-dark process-section">
         <div class="container-narrow">
             <div class="case-block" data-animate="fade-up">
-                <span class="section-label">Process</span>
-                <h2>How I designed it</h2>
-                <p>
+                <span class="section-label" data-i18n="processLabel">Process</span>
+                <h2 data-i18n="processTitle">How I designed it</h2>
+                <p data-i18n="processText">
                     This project focused on turning influencer campaign monitoring into a clearer, faster product experience for marketing teams.
                 </p>
-                <div class="process-steps">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h4>Personas & Research</h4>
-                            <p>Created detailed personas to understand different user types — from campaign managers to brand strategists — and their specific monitoring needs.</p>
-                        </div>
+                <div class="double-diamond">
+                    <div class="double-diamond-diagram" aria-label="Double Diamond design process">
+                        <div class="process-chapters"><span>Problem framing</span><span>Solution shaping</span><span>Shipped product</span></div>
+                        <svg viewBox="0 0 1200 280" role="img" aria-hidden="true"><polygon class="diamond-fill diamond-discover" points="30,140 300,25 300,255 30,140"/><polygon class="diamond-fill diamond-define" points="300,25 570,140 300,255 300,25"/><polygon class="diamond-fill diamond-develop" points="630,140 900,25 900,255 630,140"/><polygon class="diamond-fill diamond-deliver" points="900,25 1170,140 900,255 900,25"/><path d="M30 140 L300 25 L570 140 L300 255 Z M630 140 L900 25 L1170 140 L900 255 Z" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/><path d="M570 140 H630 M1170 140 H1190" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+                        <div class="process-outcome"><span>Research signals</span><span>Clear product focus</span><span>Tested information model</span><span>Live, scalable workflow</span></div>
                     </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h4>Workflow Mapping</h4>
-                            <p>Mapped end-to-end user workflows for campaign tracking, influencer evaluation, and performance reporting to ensure a streamlined experience.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h4>Data-Driven UI Design</h4>
-                            <p>Designed the interface with a focus on data visualization and clarity — making complex influencer metrics easy to scan and act on.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h4>High-Fidelity Prototyping</h4>
-                            <p>Delivered high-fidelity interactive prototypes in Figma with integrated AI analysis module concepts, ready for development handoff.</p>
-                        </div>
+                    <div class="double-diamond-grid">
+                        <article><span class="phase-rail">01 / Discover</span><div><h3>Understand the real work</h3><p><b>What I did</b> Mapped the fragmented journey across spreadsheets, social platforms and campaign updates. I focused on the points where teams lost time, context and confidence.</p><strong>Decision made: start with the user’s decision moment—not a dashboard wish list.</strong></div></article>
+                        <article><span class="phase-rail">02 / Define</span><div><h3>Choose the product focus</h3><p><b>What I did</b> Turned the research into a clear product scope: creator discovery, campaign context and performance visibility.</p><strong>Decision made: reject a broad command centre; build one connected monitoring flow.</strong></div></article>
+                        <article><span class="phase-rail">03 / Develop</span><div><h3>Test the information hierarchy</h3><p><b>What I did</b> Explored how search, creator signals, reports and comparison could use the same data language while revealing detail progressively.</p><strong>Trade-off: fewer competing metrics in each view, clearer next actions.</strong></div></article>
+                        <article><span class="phase-rail">04 / Deliver</span><div><h3>Align product, data and engineering</h3><p><b>What I did</b> Translated the chosen patterns into reusable components, high-fidelity behaviours and handoff-ready states.</p><strong>Outcome: a shipped monitoring experience that can grow with the platform.</strong></div></article>
                     </div>
                 </div>
             </div>
@@ -313,16 +235,16 @@
     <section class="case-section">
         <div class="container-narrow">
             <div class="case-block" data-animate="fade-up">
-                <span class="section-label">Outcome</span>
-                <h2>Key takeaways</h2>
+                <span class="section-label" data-i18n="outcomeLabel">Outcome</span>
+                <h2 data-i18n="outcomeTitle">Key takeaways</h2>
                 <div class="case-results">
                     <div class="result-item">
                         <div class="result-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                         <div>
-                            <h4>30% improvement in monitoring efficiency</h4>
-                            <p>The data-driven interface and streamlined workflows significantly reduced the time teams spent on manual influencer tracking.</p>
+                            <h4 data-i18n="outcomeOneTitle">30% improvement in monitoring efficiency</h4>
+                            <p data-i18n="outcomeOneText">The data-driven interface and streamlined workflows significantly reduced the time teams spent on manual influencer tracking.</p>
                         </div>
                     </div>
                     <div class="result-item">
@@ -330,8 +252,8 @@
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                         <div>
-                            <h4>AI-integrated prototypes</h4>
-                            <p>Delivered high-fidelity prototypes with AI analysis modules that demonstrated how smart insights could drive better campaign decisions.</p>
+                            <h4 data-i18n="outcomeTwoTitle">AI-integrated prototypes</h4>
+                            <p data-i18n="outcomeTwoText">Delivered high-fidelity prototypes with AI analysis modules that demonstrated how smart insights could drive better campaign decisions.</p>
                         </div>
                     </div>
                     <div class="result-item">
@@ -339,8 +261,8 @@
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                         <div>
-                            <h4>Persona-driven design decisions</h4>
-                            <p>Every design choice was grounded in real user personas and validated workflows, ensuring the platform addressed actual pain points.</p>
+                            <h4 data-i18n="outcomeThreeTitle">Persona-driven design decisions</h4>
+                            <p data-i18n="outcomeThreeText">Every design choice was grounded in real user personas and validated workflows, ensuring the platform addressed actual pain points.</p>
                         </div>
                     </div>
                 </div>
@@ -352,10 +274,10 @@
     <section class="case-section section-dark">
         <div class="container">
             <div class="next-project" data-animate="fade-up">
-                <span class="section-label">Next Project</span>
+                <span class="section-label" data-i18n="nextProject">Next Project</span>
                 <a href="case-infacto.html" class="next-project-link">
                     <h2>InFactore</h2>
-                    <span class="project-link">View Case Study <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <span class="project-link"><span data-i18n="viewCaseStudy">View Case Study</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                 </a>
             </div>
         </div>
@@ -369,7 +291,7 @@
         <div class="container">
             <div class="footer-inner">
                 <span class="footer-logo">OA<span class="accent">.</span></span>
-                <span class="footer-copy">&copy; 2026 Otmane Allaoui. Built with Claude & Cursor.</span>
+                <span class="footer-copy">&copy; 2026 Otmane Allaoui. <span data-i18n="footerBuilt">Built with Claude & Cursor.</span></span>
             </div>
         </div>
     </footer>
