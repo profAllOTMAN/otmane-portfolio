@@ -2,24 +2,6 @@
 // OTMANE ALLAOUI — PORTFOLIO SCRIPTS
 // ========================================
 
-document.querySelectorAll('iframe[data-desktop-viewport]').forEach((frame) => {
-    const shell = frame.parentElement;
-    const desktopWidth = Number(frame.dataset.desktopViewport);
-
-    const fitDesktopViewport = () => {
-        const scale = shell.clientWidth / desktopWidth;
-        if (!scale) return;
-
-        frame.style.setProperty('width', desktopWidth + 'px', 'important');
-        frame.style.setProperty('min-width', desktopWidth + 'px', 'important');
-        frame.style.setProperty('height', shell.clientHeight / scale + 'px', 'important');
-        frame.style.transform = `scale(${scale})`;
-    };
-
-    fitDesktopViewport();
-    new ResizeObserver(fitDesktopViewport).observe(shell);
-});
-
 // --- Cursor Glow ---
 const cursorGlow = document.getElementById('cursorGlow');
 let mouseX = 0, mouseY = 0;
