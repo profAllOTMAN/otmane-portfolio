@@ -1098,6 +1098,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .production-story { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: center; padding: 100px 0; }
 .production-story-reverse { grid-template-columns: 1.15fr .85fr; }
 .production-story-copy h2, .live-experience h2 { margin: 14px 0; font-size: clamp(2rem,4vw,3.3rem); line-height: 1.08; letter-spacing: -.04em; }
+.live-experience h2 { font-size: clamp(2.75rem,4vw,3.3rem); }
 .production-story-copy > p, .live-experience p { color: var(--text-secondary); line-height: 1.75; }
 .production-story-copy > p + p { margin-top: 16px; }
 .live-experience { margin: 10px 0; padding: 34px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: radial-gradient(circle at 80% 0%, var(--accent-glow), transparent 34%), var(--bg-elevated); }
@@ -1704,10 +1705,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 
     .case-hero { padding: 120px 0 60px; }
     .case-hero-content h1 { font-size: 2.5rem; }
-    .production-stage, .live-experience { padding: 18px; }
-    .live-experience-wide { padding: 20px; }
-    .live-first .container-wide { padding: 0 12px; }
-    .production-stage-copy, .live-experience-header { display: grid; gap: 16px; align-items: start; }
+    .production-stage { padding: 18px; }
+    .production-stage-copy { display: grid; gap: 16px; align-items: start; }
     .live-experience-wide .live-product-shell:not(.live-product-static) { height: clamp(560px, 78vh, 680px); }
     .double-diamond-diagram { margin-bottom: 34px; }
     .double-diamond-grid article { min-height: 0; }
@@ -1715,6 +1714,14 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
     .resume-entry { grid-template-columns: 1fr; gap: 10px; }
     .resume-education p { display: grid; gap: 4px; }
     .resume-education span { text-align: left; }
+}
+
+@media (max-width: 600px) {
+    .live-experience-wide { padding: 20px; }
+    .live-first .container-wide { padding: 0 12px; }
+    .live-experience-header { display: grid; gap: 16px; align-items: start; }
+    .live-experience-header .btn { justify-self: start; }
+    .live-experience h2 { font-size: 2.2rem; }
 }
 
 @media (max-width: 480px) {
