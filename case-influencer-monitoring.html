@@ -49,7 +49,75 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=influencer-layout-3">
+    <style>
+      html[data-locale-page="influencer-monitoring"] .live-first .container-wide {
+        width: 100%;
+        max-width: 1400px;
+        padding: 0 24px;
+      }
+
+      html[data-locale-page="influencer-monitoring"] .live-experience-wide {
+        width: 100%;
+        min-width: 0;
+        padding: 42px;
+      }
+
+      html[data-locale-page="influencer-monitoring"] .live-experience-header {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: end;
+        gap: 30px;
+        margin-bottom: 28px;
+      }
+
+      html[data-locale-page="influencer-monitoring"] .live-experience-header > div {
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: 680px;
+      }
+
+      html[data-locale-page="influencer-monitoring"] .live-experience-header .btn {
+        flex: 0 0 auto;
+      }
+
+      html[data-locale-page="influencer-monitoring"] .live-experience h2 {
+        font-size: clamp(2.75rem, 4vw, 3.3rem);
+      }
+
+      html[data-locale-page="influencer-monitoring"] .live-product-static {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      html[data-locale-page="influencer-monitoring"] .live-product-static img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 480px) {
+        html[data-locale-page="influencer-monitoring"] .live-first .container-wide {
+          padding: 0 12px;
+        }
+
+        html[data-locale-page="influencer-monitoring"] .live-experience-wide {
+          padding: 20px;
+        }
+
+        html[data-locale-page="influencer-monitoring"] .live-experience-header {
+          flex-wrap: wrap;
+          align-items: start;
+          gap: 16px;
+        }
+
+        html[data-locale-page="influencer-monitoring"] .live-experience h2 {
+          font-size: 2.2rem;
+        }
+      }
+    </style>
 
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1472X1V0Q"></script>
@@ -296,6 +364,6 @@
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js?v=influencer-layout-3" defer></script>
 </body>
 </html>
