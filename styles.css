@@ -384,8 +384,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 /* --- Project Cards --- */
 .project-card {
     display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
-    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
     align-items: center;
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -441,10 +441,10 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .graphic-work { margin-top: 96px; padding-top: 32px; border-top: 1px solid var(--border); }
 .graphic-work-header { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 28px; }
 .graphic-work-header p { max-width: 380px; color: var(--text-muted); }
-.graphic-work-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-.graphic-project-card { display: grid; grid-template-columns: minmax(230px, 44%) minmax(0, 1fr); gap: 24px; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--bg-card); transition: transform var(--transition), border-color var(--transition), background var(--transition); }
+.graphic-work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.graphic-project-card { display: grid; grid-template-columns: 210px 1fr; gap: 24px; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--bg-card); transition: transform var(--transition), border-color var(--transition), background var(--transition); }
 .graphic-project-card:hover { transform: translateY(-4px); border-color: var(--border-hover); background: var(--bg-card-hover); }
-.graphic-project-image { min-height: 340px; overflow: hidden; border-radius: var(--radius); background: #f5f2ec; }
+.graphic-project-image { height: 240px; overflow: hidden; border-radius: var(--radius); background: #f5f2ec; }
 .graphic-project-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 38%; transition: transform var(--transition); }
 .graphic-project-card:hover .graphic-project-image img { transform: scale(1.025); }
 .graphic-project-card h3 { margin: 10px 0 8px; font-size: 1.45rem; }
@@ -476,7 +476,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 
 .live-preview-frame {
     position: relative;
-    aspect-ratio: 6 / 5;
+    height: 300px;
     overflow: hidden;
     background: #0f0f12;
 }
@@ -493,7 +493,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .preview-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: top center;
 }
 
@@ -1102,8 +1102,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .production-story-copy > p + p { margin-top: 16px; }
 .live-experience { margin: 10px 0; padding: 34px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: radial-gradient(circle at 80% 0%, var(--accent-glow), transparent 34%), var(--bg-elevated); }
 .live-first { padding-top: 0; }
-.live-experience-wide { padding: 42px; }
-.live-experience-wide .live-product-shell { height: min(78vh, 900px); }
+.live-experience-wide { width: 100%; padding: 42px; }
 .case-study { display: flex; flex-direction: column; }
 .case-study > section { order: 4; }
 .case-study > .case-hero { order: 1; }
@@ -1111,8 +1110,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .case-study > .process-section { order: 3; }
 .live-experience-header { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 28px; }
 .live-experience-header > div { max-width: 680px; }
-.live-product-shell { overflow: hidden; height: 680px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); }
-.live-product-shell iframe { width: 100%; height: 100%; border: 0; background: var(--bg); }
+.live-product-shell { width: 100%; height: clamp(560px, 62vw, 780px); overflow: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); -webkit-overflow-scrolling: touch; }
+.live-product-shell iframe { display: block; width: 100%; height: 100%; border: 0; background: var(--bg); }
 .evidence-card { min-height: 260px; display: flex; flex-direction: column; justify-content: end; padding: 30px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: radial-gradient(circle at 50% 0%, var(--accent-glow), transparent 55%), var(--bg-card); }
 .evidence-card h3 { margin: 14px 0 8px; font-size: 2rem; }
 .evidence-card p { color: var(--text-secondary); max-width: 280px; }
@@ -1147,8 +1146,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 }
 
 .case-screenshot {
-    height: auto;
-    aspect-ratio: 6 / 5;
+    height: 520px;
     background: #0f0f12;
 }
 
@@ -1684,8 +1682,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 
     .projects-grid { grid-template-columns: 1fr; }
     .graphic-work-header { display: grid; gap: 12px; align-items: start; }
-    .graphic-project-card { grid-template-columns: minmax(190px, 42%) minmax(0, 1fr); }
-    .graphic-project-image { min-height: 300px; }
+    .graphic-project-card { grid-template-columns: 150px 1fr; }
+    .graphic-project-image { height: 200px; }
     .graphic-detail-grid { grid-template-columns: 1fr; }
 
     .tools-grid { grid-template-columns: 1fr; }
@@ -1705,7 +1703,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
     .production-stage, .live-experience { padding: 18px; }
     .live-experience-wide { padding: 20px; }
     .production-stage-copy, .live-experience-header { display: grid; gap: 16px; align-items: start; }
-    .live-product-shell { height: 520px; }
+    .live-experience-wide .live-product-shell { height: clamp(560px, 78vh, 680px); }
     .double-diamond-diagram { margin-bottom: 34px; }
     .double-diamond-grid article { min-height: 0; }
     .resume-aside { grid-template-columns: 1fr; }
@@ -1724,8 +1722,6 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
     }
     .project-card-info h3 { font-size: 1.5rem; }
     .project-card { padding: 16px; }
-    .graphic-project-card { grid-template-columns: 1fr; }
-    .graphic-project-image { min-height: 320px; }
     .mock-cards { grid-template-columns: 1fr; }
     .mock-influencer-grid { grid-template-columns: repeat(2, 1fr); }
     .mock-kanban { grid-template-columns: 1fr; }
