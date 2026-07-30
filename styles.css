@@ -1021,19 +1021,21 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .resume-role { color: var(--text-secondary); font-size: 1.15rem; }
 .resume-location { color: var(--text-muted); margin-top: 8px; }
 .resume-heading .hero-actions { margin-top: 32px; }
-.resume-layout { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 100px; align-items: start; }
-.resume-aside { position: sticky; top: 112px; color: var(--text-secondary); line-height: 1.7; }
+.resume-layout { display: grid; grid-template-columns: minmax(220px, 260px) minmax(0, 760px); justify-content: space-between; gap: clamp(48px, 8vw, 100px); align-items: start; }
+.resume-aside { position: sticky; top: 112px; min-width: 0; color: var(--text-secondary); line-height: 1.7; }
 .resume-aside-block { display: grid; gap: 8px; margin-top: 34px; }
+.resume-aside p, .resume-aside a { overflow-wrap: anywhere; }
 .resume-aside a { color: var(--text-secondary); transition: color var(--transition); }
 .resume-aside a:hover { color: var(--accent-light); }
-.resume-main { max-width: 760px; }
+.resume-main { width: 100%; max-width: 760px; min-width: 0; }
 .resume-section { padding: 0 0 52px; margin-bottom: 52px; border-bottom: 1px solid var(--border); }
 .resume-section:last-child { border-bottom: 0; }
 .resume-section h2 { margin: 16px 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; letter-spacing: -0.035em; }
 .resume-section > p { color: var(--text-secondary); max-width: 700px; }
 .resume-entry { display: grid; grid-template-columns: 150px 1fr; gap: 30px; padding: 28px 0; border-bottom: 1px solid var(--border); }
 .resume-entry-meta { display: grid; align-content: start; gap: 4px; color: var(--text-muted); font: 0.75rem var(--font-mono); }
-.resume-entry h3 { margin-bottom: 10px; font-size: 1.05rem; }
+.resume-entry > div { min-width: 0; }
+.resume-entry h3 { margin-bottom: 10px; font-size: 1.05rem; line-height: 1.45; }
 .resume-entry h3 span { color: var(--text-muted); font-weight: 400; }
 .resume-entry p { color: var(--text-secondary); font-size: 0.95rem; margin-top: 8px; }
 .resume-project-list { display: grid; margin-top: 20px; border-top: 1px solid var(--border); }
@@ -1656,9 +1658,14 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
     .case-feature { grid-template-columns: 1fr; gap: 32px; }
     .case-feature.reverse { direction: ltr; }
     .production-story, .production-story-reverse { grid-template-columns: 1fr; gap: 36px; padding: 72px 0; }
-    .resume-layout { grid-template-columns: 1fr; gap: 52px; }
-    .resume-aside { position: static; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .resume-layout { grid-template-columns: 1fr; gap: 64px; }
+    .resume-aside { position: static; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto 1fr; gap: 10px 32px; padding: 28px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--bg-card); }
+    .resume-aside > .section-label:first-child { grid-column: 1; grid-row: 1; }
+    .resume-aside > p:first-of-type { grid-column: 1; grid-row: 2; }
+    .resume-aside > .resume-aside-block:nth-of-type(1) { grid-column: 2; grid-row: 1 / 3; }
+    .resume-aside > .resume-aside-block:nth-of-type(2) { grid-column: 3; grid-row: 1 / 3; }
     .resume-aside-block { margin-top: 0; }
+    .resume-main { max-width: none; }
     .graphic-work-grid { grid-template-columns: 1fr; }
 }
 
@@ -1710,7 +1717,13 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
     .live-experience-wide .live-product-shell:not(.live-product-static) { height: clamp(560px, 78vh, 680px); }
     .double-diamond-diagram { margin-bottom: 34px; }
     .double-diamond-grid article { min-height: 0; }
-    .resume-aside { grid-template-columns: 1fr; }
+    .resume-heading h1 { font-size: clamp(2.75rem, 12vw, 4.5rem); }
+    .resume-heading .hero-actions { max-width: 360px; }
+    .resume-aside { grid-template-columns: 1fr; grid-template-rows: auto; gap: 24px; padding: 24px; }
+    .resume-aside > .section-label:first-child,
+    .resume-aside > p:first-of-type,
+    .resume-aside > .resume-aside-block:nth-of-type(1),
+    .resume-aside > .resume-aside-block:nth-of-type(2) { grid-column: 1; grid-row: auto; }
     .resume-entry { grid-template-columns: 1fr; gap: 10px; }
     .resume-education p { display: grid; gap: 4px; }
     .resume-education span { text-align: left; }
@@ -1729,4 +1742,11 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
     .mock-cards { grid-template-columns: 1fr; }
     .mock-influencer-grid { grid-template-columns: repeat(2, 1fr); }
     .mock-kanban { grid-template-columns: 1fr; }
+    .resume-heading h1 { font-size: 2.35rem; letter-spacing: -0.035em; }
+    .resume-role { font-size: 1rem; }
+    .resume-heading .hero-actions { width: 100%; max-width: none; }
+    .resume-heading .hero-actions .btn { width: 100%; }
+    .resume-section { padding-bottom: 38px; margin-bottom: 38px; }
+    .resume-section h2 { font-size: 1.85rem; }
+    .resume-entry { padding: 22px 0; }
 }
